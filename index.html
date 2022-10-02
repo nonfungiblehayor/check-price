@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en_us">
+    <head>
+        <title>check-price</title>
+        <link rel="shortcut icon" href="images/logo.svg">
+
+        <link rel="stylesheet" href="styles/check-price-desktop.css">
+        <link rel="stylesheet" href="styles/check-price-mobile.css">
+
+        <meta charset="UTF_8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.svg">
+            <h1>check-price</h1>
+        </header>
+        
+       <div class="first-section">
+            <nav class="first-section-1">
+                <div class="first-section-1-top">
+                    <p>Top volume</p>
+                <img src="images/up-arrow.svg">    <span>6.2%</span>
+                </div>
+                <div class="first-section-1-down">
+                    <p>Btc</p>
+                    <span>$2000</span>
+                 </div>
+            </nav>
+             <nav class="first-section-1 r2">
+                <div class="first-section-1-top">
+                    <p>Lowest volume</p>
+                <img src="images/down-arrow.svg">    <span>6.2%</span>
+                </div>
+                <div class="first-section-1-down">
+                    <p>Btc</p>
+                    <span>$2000</span>
+                 </div>
+            </nav>
+            <nav class="first-section-1 r3">
+                <div class="first-section-1-top">
+                    <p>Biggest % increase</p>
+                <img src="images/up-arrow.svg">    <span>6.2%</span>
+                </div>
+                <div class="first-section-1-down">
+                    <p>Btc</p>
+                    <span>$2000</span>
+                 </div>
+            </nav>
+            <nav class="first-section-1 rd">
+                <div class="first-section-1-top">
+                    <p>Biggest % decrease</p>
+                <img src="images/down-arrow.svg">    <span>6.2%</span>
+                </div>
+                <div class="first-section-1-down">
+                    <p>Btc</p>
+                    <span>$2000</span>
+                 </div>
+            </nav>
+        </div>
+
+        <div class="search-section">
+                <input type="search">
+        </div>
+
+        <div class="second-section">
+            <table>
+                <tr class="heading">
+                    <th>Asset</th>
+                    <th>Last-price in USD</th>
+                    <th>24h High</th>
+                    <th>24h low</th>
+                    <th>24h chart</th>
+                </tr>
+
+                  
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"> Bitcoin
+                    </th>
+                    <th class="bitcoin-price">$50,000</th>
+                    <th class="bitcoin-24h-high">0.00005%</th>
+                    <th class="bitcoin-24h-low">0.00007%</th>
+                    <th class="bitcoin-chart" width="2" height="2vw">
+                        <canvas id="myChart" width="2" height="2"></canvas>
+                    </th>
+                </tr> 
+                
+              
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880">
+                        <span> Ethereum </span>
+                    </th>
+                    <th class="ethereum">$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr> 
+ 
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"> USDT
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr> 
+
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png?1547042389"> USDC
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr> 
+
+                  
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850"> BNB
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr> 
+
+                 
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png?1605778731"> XRP
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr> 
+
+               
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png?1568947766"> BUSD
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr> 
+
+                
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860"> cardano
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr>
+
+                 
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422"> Solana
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr>
+
+                 
+                <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png?1547792256"> Dogecoin
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr>
+
+                   
+                  <tr>
+                    <th>
+                        <img src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644"> Polkadot
+                    </th>
+                    <th>$50,000</th>
+                    <th>0.00005%</th>
+                    <th>0.00007%</th>
+                    <th>
+                        <img src="https://www.coingecko.com/coins/1/sparkline">
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <script src="scripts/check-price.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            async function getChart() {
+            let response = await fetch('https://min-api.cryptocompare.com/data/v2/histominute?fsym=BTC&tsym=USD&limit=119&api_key=0646cc7b8a4d4b54926c74e0b20253b57fd4ee406df79b3d57d5439874960146')
+            const json = await response.json();
+            const data = json.Data.Data
+            const times = data.map(obj => obj.time)
+            const prices = data.map(obj => obj.high)
+            return {
+            times,
+            prices
+            }
+        }
+
+            getChart().then(response=> {
+                let { times, prices } = response 
+                console.log(response)    
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: times,
+                    datasets: [{
+                    label: '',
+                    data: prices,
+                    borderColor: 'green',
+                    borderJoinStyle: 'round',
+                    borderCapStyle: 'round',
+                    borderWidth: 3,
+                    pointRadius: 0,
+                    pointHitRadius: 10,
+                    lineTension: .2,
+      }]
+                },
+                options: {
+                    legend: {
+                            display: false
+                        },
+                    tooltips: {
+                            callbacks: {
+                            label: function(tooltipItem) {
+                                    return tooltipItem.yLabel;
+                            }
+                            }
+                        },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                display: false
+                            }
+                        },
+                        yAxes: [{
+                            gridLines: {
+                                drawBorder: false,
+                            }
+                        }],
+                        xAxes: [{
+                            gridLines: {
+                                drawBorder: false,
+                            }
+                        }],
+                    }
+                }
+            });
+        })
+            </script>            
+    </body>
+</html>

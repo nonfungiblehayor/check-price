@@ -1,0 +1,114 @@
+@media screen and(min-width: 1000px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(28, 55, 28);
+    }
+    header {
+        display: grid;
+        grid-template-columns: 8vw auto;
+        gap: -3vw;
+        max-width: 100%;
+        padding-left: 4vw;
+        padding-top: 3vw;
+        img {
+           height: 7vw;
+        }
+        h1 {
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    }
+    .first-section {
+        display: grid;
+        grid-template-columns: 20vw 20vw 25vw 25vw;
+        max-width: 100%;
+        margin-top: 3vw;
+        padding-left: 2vw;
+        justify-content: center;
+        .first-section-1 {
+            display: grid;
+            grid-template-columns: auto;
+            border-right: 2px solid grey;
+            margin-left: 2vw;
+            .first-section-1-top {
+                display: flex;
+                flex-direction: row;
+                img {
+                    width: 2vw;
+                }
+                p {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    margin-right: 3vw;
+                }
+                span {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    margin-top: 1vw;
+                    margin-left: 0.5vw; 
+                }
+            }
+            .first-section-1-down {
+                display: grid;
+                grid-template-columns: auto auto;
+                p {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    margin-right: 3vw;
+                }
+                span {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    margin-top: 1.2vw;
+                    justify-self: right;
+                    margin-right: 3vw;
+                }
+            }
+        }
+        .rd {
+            border-right: none;
+            .first-section-1-down {
+                span {
+                    margin-right: 3.5vw; 
+                }
+            }
+        }
+    }
+    .search-section {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 3vw;
+        input {
+            background-image: url(../images/search.png);
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: 2vw;
+            background-position-x: 10px;
+            background-position-y: 10px;
+            padding-left: 1vw;
+            width: 15vw;
+            height: 3vw;
+            border: none;
+            border-radius: 20px; 
+            margin-top: 3vw;
+        }
+        input:focus {
+            outline: 2px solid rgb(69, 133, 69);
+            width: 35vw;
+            background-position-x: right;           
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.485);
+            padding: 15px;
+            text-align: left;
+        }
+      }
+}
