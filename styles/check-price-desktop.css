@@ -70,9 +70,6 @@
   .first-section .rd {
     border-right: none;
   }
-  .first-section .rd .first-section-1-down span {
-    margin-right: 3.5vw;
-  }
   .search-section {
     display: grid;
     justify-content: center;
