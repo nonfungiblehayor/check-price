@@ -1,0 +1,153 @@
+@media screen and (max-width: 950px) {
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(28, 55, 28);
+    }
+    header {
+        display: grid;
+        grid-template-columns: 8vw auto;
+        gap: 10vw;
+        max-width: 100%;
+        padding-left: 4vw;
+        padding-top: 3vw;
+        img {
+           width: 15vw;
+        }
+        h1 {
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 24px;
+        }
+    }
+    .first-section {
+        display: grid;
+        grid-template-columns: auto;
+        max-width: 100%;
+        margin-top: 3vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        .first-section-1 {
+            display: grid;
+            grid-template-columns: auto;
+            max-width: 100%;
+            border-bottom: 2px solid grey;
+            .first-section-1-top {
+                display: grid;
+                grid-template-columns: auto auto 20vw;
+                height: 15vw;
+                align-content: center;
+                img {
+                    width: 5vw;
+                    justify-self: right;
+                    margin-top: 6vw;
+                }
+                p {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 20px;
+                    font-weight: 400;                     
+                }
+                span {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 20px;
+                    font-weight: 400; 
+                    justify-self: right;
+                    margin-top: 6vw;
+                }
+            }
+            .first-section-1-down {
+                display: grid;
+                grid-template-columns: auto auto;
+                height: 15vw;
+                align-content: center;
+                p {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 20px;
+                    font-weight: 400; 
+                }
+                span {
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 20px;
+                    font-weight: 400; 
+                    justify-self: right;
+                    margin-top: 6vw;
+                }
+            }
+        }
+    }
+    .search-section {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+        input {
+            background-image: url(../images/search.png);
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: 4vw;
+            background-position-x: 10px;
+            background-position-y: 0.5vw;
+            padding-left: 1vw;
+            width: 15vw;
+            height: 5vw;
+            border: none;
+            border-radius: 20px; 
+            margin-top: 3vw;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+        input:focus {
+            outline: 2px solid rgb(69, 133, 69);
+            width: 50vw;
+            background-position-x: right;           
+        }
+        .search-option {
+            width: 50vw;
+            height: 8vw;
+            background-color: black;
+            outline: 2px solid rgb(69, 133, 69);
+            display: none;
+            align-items: flex-start;
+            gap: 1.5vw;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-top: 10px;
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+                width: 100%;
+                padding: 10px;
+                display: none;
+            }
+            a:hover {
+                background-color: #4ECB71;
+            }
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            color: #ffffff;
+            font-size: 10px;
+            font-family: 'Roboto', sans-serif;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.485);
+            padding: 7px;
+            text-align: left;
+            img {
+                width: 3vw;
+            }
+            canvas {
+                height: 7vw;
+            }
+        }
+      }
+}
