@@ -89,11 +89,39 @@
             border: none;
             border-radius: 20px; 
             margin-top: 3vw;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
         }
         input:focus {
             outline: 2px solid rgb(69, 133, 69);
             width: 35vw;
             background-position-x: right;           
+        }
+        .search-option {
+            width: 35vw;
+            height: 8vw;
+            background-color: black;
+            outline: 2px solid rgb(69, 133, 69);
+            display: none;
+            align-items: flex-start;
+            gap: 1.5vw;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 10px;
+            padding-top: 10px;
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+                width: 100%;
+                padding: 10px;
+                display: none;
+            }
+            a:hover {
+                background-color: #4ECB71;
+            }
         }
     }
     table {

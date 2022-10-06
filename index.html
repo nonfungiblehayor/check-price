@@ -30,47 +30,64 @@
             <nav class="first-section-1">
                 <div class="first-section-1-top">
                     <p>Top volume</p>
-                <img src="images/up-arrow.svg">    <span>6.2%</span>
+                <img src="images/up-arrow.svg">    <span class="top-volume">6.2%</span>
                 </div>
                 <div class="first-section-1-down">
-                    <p>Btc</p>
-                    <span>$2000</span>
+                    <p class="top-volume-name">Btc</p>
+                    <span class="top-volume-price">$2000</span>
                  </div>
             </nav>
              <nav class="first-section-1 r2">
                 <div class="first-section-1-top">
                     <p>Lowest volume</p>
-                <img src="images/down-arrow.svg">    <span>6.2%</span>
+                <img src="images/down-arrow.svg">    <span class="low-volume">6.2%</span>
                 </div>
                 <div class="first-section-1-down">
-                    <p>Btc</p>
-                    <span>$2000</span>
+                    <p class="low-volume-name">Btc</p>
+                    <span class="low-volume-price">$2000</span>
                  </div>
             </nav>
             <nav class="first-section-1 r3">
                 <div class="first-section-1-top">
                     <p>Biggest % increase</p>
-                <img src="images/up-arrow.svg">    <span>6.2%</span>
+                <img src="images/up-arrow.svg">    <span class="big-percent">6.2%</span>
                 </div>
                 <div class="first-section-1-down">
-                    <p>Btc</p>
-                    <span>$2000</span>
+                    <p class="big-percent-name">Btc</p>
+                    <span class="big-percent-price">$2000</span>
                  </div>
             </nav>
             <nav class="first-section-1 rd">
                 <div class="first-section-1-top">
                     <p>Biggest % decrease</p>
-                <img src="images/down-arrow.svg">    <span>6.2%</span>
+                <img src="images/down-arrow.svg">    <span class="low-percent">6.2%</span>
                 </div>
                 <div class="first-section-1-down">
-                    <p>Btc</p>
-                    <span>$2000</span>
+                    <p class="low-percent-name">Btc</p>
+                    <span class="low-percent-price">$2000</span>
                  </div>
             </nav>
         </div>
 
         <div class="search-section">
-                <input type="search">
+                <input type="search" class="search">
+                <div class="search-option">
+                 <a href="#btc" class="options">bitcoin</a>
+                 <a href="#eth" class="options">ethereum</a>
+                 <a href="#usdt" class="options">usdt</a>
+                 <a href="#bnb" class="options">bnb</a>
+                 <a href="#ada" class="options">Cardano</a>
+                 <a href="#sol" class="options">solana</a>
+                 <a href="#matic" class="options">polygon</a>
+                 <a href="#dai" class="options">dai</a>
+                 <a href="#uni" class="options">uniswap</a>
+                 <a href="#dot" class="options">polkadot</a>
+                 <a href="#ltc" class="options">litecoin</a>
+                 <a href="#etc" class="options">ethereum-classic</a>
+                 <a href="#ftx" class="options">ftx</a>
+                 <a href="#algo" class="options">algo</a>
+                 <a href="#lunc" class="options">terra luna classic</a>
+                </div>
         </div>
 
         <div class="second-section">
@@ -84,7 +101,7 @@
                 </tr>
 
                   
-                <tr>
+                <tr id="btc">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579"> Bitcoin
                     </th>
@@ -97,10 +114,10 @@
                 </tr> 
                 
               
-                <tr>
-                    <th>
+                <tr id="eth">
+                    <th class="btc">
                         <img src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png?1595348880">
-                        <span> Ethereum </span>
+                    <span class="eth">Ethereum </span>     
                     </th>
                     <th class="bitcoin-price">$50,000</th>
                     <th class="bitcoin-24h-high">0.00005%</th>
@@ -110,7 +127,7 @@
                     </th>
                 </tr> 
  
-                <tr>
+                <tr id="usdt">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png?1598003707"> USDT
                     </th>
@@ -122,7 +139,7 @@
                     </th>
                 </tr> 
                   
-                <tr>
+                <tr id="bnb">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png?1644979850"> BNB
                     </th>
@@ -134,7 +151,7 @@
                     </th>
                 </tr> 
                 
-                <tr>
+                <tr id="ada">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png?1547034860"> cardano
                     </th>
@@ -147,7 +164,7 @@
                 </tr>
 
                  
-                <tr>
+                <tr id="sol">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png?1640133422"> Solana
                     </th>
@@ -160,7 +177,7 @@
                 </tr>
 
                  
-                <tr>
+                <tr id="matic">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png?1624446912"> Polygon
                     </th>
@@ -172,7 +189,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="dai">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/9956/thumb/4943.png?1636636734"> Dai
                     </th>
@@ -184,7 +201,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="uni">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png?1600306604"> Uniswap
                     </th>
@@ -196,7 +213,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="dot">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png?1639712644"> Polkadot
                     </th>
@@ -208,7 +225,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="ltc">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/2/thumb/litecoin.png?1547033580"> Litecoin
                     </th>
@@ -220,7 +237,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="etc">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/453/thumb/ethereum-classic-logo.png?1547034169"> ethereum-classic
                     </th>
@@ -232,7 +249,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="ftx">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/9026/thumb/F.png?1609051564"> FTX
                     </th>
@@ -244,7 +261,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="algo">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/4380/thumb/download.png?1547039725"> algo
                     </th>
@@ -256,7 +273,7 @@
                     </th>
                 </tr>
 
-                <tr>
+                <tr id="lunc">
                     <th>
                         <img src="https://assets.coingecko.com/coins/images/25767/thumb/01_Luna_color.png?1653556122"> Terra-luna-classic
                     </th>
